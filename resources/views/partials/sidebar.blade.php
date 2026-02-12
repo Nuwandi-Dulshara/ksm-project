@@ -7,7 +7,7 @@
             <i class="fa-solid fa-house me-2"></i> Dashboard
         </a>
 
-        <a href="income.html" class="nav-link text-white">
+        <a href="{{ route('incomes.index') }}" class="nav-link text-white">
             <i class="fa-solid fa-money-bill-trend-up me-2"></i> Incomes
         </a>
         <a href="add-outcome.html" class="nav-link text-white">
