@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Income;
 
 class Donator extends Model
 {
@@ -11,6 +12,13 @@ class Donator extends Model
         'email',
         'phone',
         'address',
-        'total_donated',
     ];
+
+    /**
+     * A Donator can have many Incomes
+     */
+    public function incomes()
+    {
+        return $this->hasMany(Income::class);
+    }
 }
