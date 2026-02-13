@@ -6,6 +6,9 @@ use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DonatorController;
 use App\Http\Controllers\IncomeController;
+use App\Http\Controllers\ExpenseCategoryController;
+use App\Http\Controllers\ExpenseController;
+
 
 Route::get('/', [AuthController::class, 'showLogin'])->name('login');
 
@@ -24,4 +27,9 @@ Route::resource('users', UserController::class);
 Route::resource('donators', DonatorController::class);
 
 Route::resource('incomes', IncomeController::class);
+
+Route::resource('expense-categories', ExpenseCategoryController::class);
+Route::resource('expenses', ExpenseController::class);
+
+
 

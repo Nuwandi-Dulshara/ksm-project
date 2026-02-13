@@ -10,6 +10,15 @@
         <a href="{{ route('incomes.index') }}" class="nav-link text-white">
             <i class="fa-solid fa-money-bill-trend-up me-2"></i> Incomes
         </a>
+
+        <a href="{{ route('expense-categories.index') }}" class="nav-link text-white">
+             <i class="fa-solid fa-receipt me-2"></i>Expense Category
+        </a>
+
+        <a href="{{ route('expenses.index') }}" class="nav-link text-white">
+            <i class="fa-solid fa-receipt me-2"></i> Expense Registration
+        </a>
+
         <a href="add-outcome.html" class="nav-link text-white">
             <i class="fa-solid fa-money-bill-transfer me-2"></i> NEW Outcomes
         </a>
